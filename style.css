@@ -51,8 +51,36 @@ h1{
     background-color:red;
 }
 @media (max-width: 400px) {
+  body {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 1.2rem;
+  }
+
+  #board {
+    grid-template-columns: repeat(10, 8vw);
+    grid-template-rows: repeat(10, 8vw);
+    gap: 2vw;
+  }
+
   .cell {
-    height: 80px;
-    font-size: 1.5rem;
+    width: 8vw;
+    height: 8vw;
+  }
+
+  .button1 {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6px;
+    margin-bottom: 20px;
+  }
+
+  .button {
+    width: 20vw;
+    height: 10vw;
+    font-size: 0.9rem;
   }
 }
