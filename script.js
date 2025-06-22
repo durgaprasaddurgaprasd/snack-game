@@ -89,7 +89,7 @@ function draw()
  function keys(val)
  {
     if(val==='up') direction=-10;
-    else if(val=='right') direction=1;
+    else if(val=='bottom') direction=1
     else if(val=='left') direction=-1;
     else if(val=='top') direction=10;
  }
