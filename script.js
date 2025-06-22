@@ -47,7 +47,7 @@ function move()
        }
 
        draw();
-}
+}/*
 function makeFood()
 {
     for(let i=0;i<100;i++)
@@ -67,6 +67,15 @@ function makeFood()
             break;
         }
     }
+}*/
+function makeFood() {
+  for (let i = 0; i < 100; i++) {
+    let randomPos = Math.floor(Math.random() * 100);
+    if (!snake.includes(randomPos)) {
+      food = randomPos;
+      break; // found a good spot, exit loop
+    }
+  }
 }
 function draw()
 {
