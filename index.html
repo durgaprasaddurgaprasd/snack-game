@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <h1 class="Game-title">Snack game</h1>
+    </nav>
+    <h1 id="score" style="font-size: xx-large" color="green">Score:0</h1>
+    <audio src="click.mp3" id="audio"></audio>
+    <div id="board">
+
+    </div>
+    <div class="button1">
+       <button class="button" onclick="keys('up')">Top</button>
+       <button class="button"onclick="keys('bottom')">Bottom</button>
+       <button class="button" onclick="keys('left')">Left</button>
+       <button class="button" onclick="keys('right')">Right</button>
+        <button class="button"onclick="location.reload()">Reset</button>
+    <script src="script.js"></script>
+</body>
+</html>
