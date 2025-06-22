@@ -16,7 +16,7 @@ for(let i=0;i<100;i++)
 }
 makeFood();
 draw();
-timer=setInterval(move,450);
+timer=setInterval(move,600);
 function move()
 {
     let head=snake[0];
