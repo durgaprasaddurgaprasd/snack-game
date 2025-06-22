@@ -52,7 +52,10 @@ h1{
 }
 @media (max-width: 400px) {
   body {
-    padding: 5px;
+    padding: 10px;
+    width: 100vw;
+    overflow-x: hidden;
+    box-sizing: border-box;
   }
 
   h1 {
@@ -61,10 +64,12 @@ h1{
   }
 
   #board {
+    display: grid;
     grid-template-columns: repeat(10, 8vw);
     grid-template-rows: repeat(10, 8vw);
     gap: 1vw;
     margin-bottom: 20px;
+    justify-content: center; /* This centers the grid horizontally */
   }
 
   .cell {
@@ -86,7 +91,6 @@ h1{
     height: 9vw;
     font-size: 0.9rem;
     margin-left: 0;
-    padding: 0;
-    line-height: normal;
   }
 }
+
